@@ -1,0 +1,16 @@
+\documentclass[openright,twoside]{report}
+\usepackage{tikz-timing}
+\begin{document}
+\title{Documentation for z80 Mainframe}
+\author{Colton Beck}
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter{Dot Matrix Printer}
+\begin{tikztimingtable}
+Data 0-7 & UU7D{0x00-0xff}UUD \\
+Strobe &   LLLHLLLLLLL\\
+Busy &      LLLLLLLHLLLL\\
+\end{tikztimingtable}
+\end{document}
