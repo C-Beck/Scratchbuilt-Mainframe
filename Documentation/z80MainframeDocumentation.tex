@@ -7,10 +7,30 @@
 \tableofcontents
 \listoffigures
 \listoftables
+
 \chapter{Dot Matrix Printer}
+\begin{figure}[h]
+\centering
 \begin{tikztimingtable}
 Data 0-7 & UU7D{0x00-0xff}UUD \\
 Strobe &   LLLHLLLLLLL\\
 Busy &      LLLLLLLHLLLL\\
 \end{tikztimingtable}
+\caption{Driver Board to Printer Timing}
+\end{figure}
+\begin{figure}[h]
+\centering
+\begin{tikztimingtable}
+ADDR 0-15                                       &   UU7D{0xFB}UUD \\
+DATA 0-7                                         &   UU7D{0xFB}UUD\\
+$\overline{\mathrm{WAIT}}$             &   HHHHHHHHHHH\\
+$\overline{\mathrm{MREQ}}$             &   HHHHHHHHHHH\\
+$\overline{\mathrm{IORQ}}$              &   HHHHHHHHHHH\\
+$\overline{\mathrm{RD}}$                 &   HHHHHHHHHHH\\
+$\overline{\mathrm{WR}}$                 &   HHHHHHHHHHH\\ 
+$\overline{\mathrm{BUSREQ}}$           &   HHHHHHHHHHH\\
+$\overline{\mathrm{BUSACK}}$           &   HHHHHHHHHHH\\
+\end{tikztimingtable}
+\caption{Driver Board to Printer Timing}
+\end{figure}
 \end{document}
