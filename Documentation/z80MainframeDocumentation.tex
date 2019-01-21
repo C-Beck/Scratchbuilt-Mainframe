@@ -1,36 +1,117 @@
-\documentclass[openright,twoside]{report}
+\documentclass{book}
 \usepackage{tikz-timing}
+\usepackage{listings}
 \begin{document}
+\frontmatter
 \title{Documentation for z80 Mainframe}
 \author{Colton Beck}
 \maketitle
+\section*{Legal Information}
+\subsection*{Disclaimer of Warranty}
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+\subsection*{Limitation of Liability}
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+\chapter*{Dedication}
+Dedicated to caffeine for giving me the energy to write this and sleep deprivation for making me think this was a good idea.
 \tableofcontents
 \listoffigures
 \listoftables
-
+\mainmatter
+\chapter{Main Board}
 \chapter{Dot Matrix Printer}
+The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as shown in figure~(null pointer).
 \begin{figure}[h]
 \centering
 \begin{tikztimingtable}
-Data 0-7 & UU7D{0x00-0xff}UUD \\
-Strobe &   LLLHLLLLLLL\\
-Busy &      LLLLLLLHLLLL\\
+$\mathrm{DATA\:0-7}$         &   UU7D{MEM 0x0800}7D{MEM 0x0801}XX7D{MEM 0x0850}7D{0x0D}UU\\
+$\overline{\mathrm{STROBE}}$ &   HHHLHHHHHHLHHHHHXXHLHHHHHHLHHHHHHH\\
+$\overline{\mathrm{BUSY}}$   &   HHHHHHHHLHHHHHHLXXHHHHHHLHHHHHHLHH\\
 \end{tikztimingtable}
 \caption{Driver Board to Printer Timing}
+\label{fig:lptiming}
 \end{figure}
 \begin{figure}[h]
 \centering
 \begin{tikztimingtable}
-ADDR 0-15                                       &   UU7D{0xFB}UUD \\
-DATA 0-7                                         &   UU7D{0xFB}UUD\\
-$\overline{\mathrm{WAIT}}$             &   HHHHHHHHHHH\\
-$\overline{\mathrm{MREQ}}$             &   HHHHHHHHHHH\\
-$\overline{\mathrm{IORQ}}$              &   HHHHHHHHHHH\\
-$\overline{\mathrm{RD}}$                 &   HHHHHHHHHHH\\
-$\overline{\mathrm{WR}}$                 &   HHHHHHHHHHH\\ 
-$\overline{\mathrm{BUSREQ}}$           &   HHHHHHHHHHH\\
-$\overline{\mathrm{BUSACK}}$           &   HHHHHHHHHHH\\
+$\mathrm{ADDR\:0-15}$          &   U8D{0x00FB}UU6D{0x0800}XXX6D{0x0850}UUUU\\
+$\mathrm{DATA\:0-7}$           &   UU7D{Option Byte}UUXX4D{Data}XXXXX4D{In}UUUU\\
+$\overline{\mathrm{WAIT}}$    &   UUUULLLLHHHHHHHHHHHHHHHHHHHHHU\\
+$\overline{\mathrm{MREQ}}$    &   UHHHHHHHHHHHLLLLLHXXHLLLLLHHHU\\
+$\overline{\mathrm{IORQ}}$    &   UHHLLLLHHHHHHHHHHHHHHHHHHHHHHU\\
+$\overline{\mathrm{RD}}$      &   UHHHHHHHHHHHLLLLLHXXHLLLLLHHHU\\
+$\overline{\mathrm{WR}}$      &   UHHLLLLHHHHHHHHHHHHHHHHHHHHHHU\\ 
+$\overline{\mathrm{BUSREQ}}$  &   UHHHHHLLLLLLLLLLLLLLLLLLLLLHHH\\
+$\overline{\mathrm{BUSACK}}$  &   UHHHHHHLLLLLLLLLLLLLLLLLLLLLHH\\
+\extracode
+\begin{pgfonlayer}{background}
+\vertlines[help lines]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30}
+\end{pgfonlayer}
 \end{tikztimingtable}
-\caption{Driver Board to Printer Timing}
+\caption{Main Bus to Printer Driver Timing}
+\label{fig:lpdrivertiming}
 \end{figure}
+\chapter{Card Punch}
+\chapter{Card Reader}
+\chapter{Paper Tape Reader}
+\chapter{Paper Tape Punch}
+\appendix
+\chapter{Part List}
+\chapter{Code Listings}
+\lstset{numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt}
+\section{ROM Listing}
+\cleardoublepage
+\section{Line Printer Driver Listing}
+\lstinputlisting[language=C++,firstline=3]{../Code/PrinterDriver/PrinterDriver.ino}
+\cleardoublepage
+\section{Card Punch Driver Listing}
+\cleardoublepage
+\section{Card Reader Driver Listing}
+\cleardoublepage
+\section{Paper Tape Punch Driver Listing}
+\cleardoublepage
+\section{Paper Tape Reader Driver Listing}
+\chapter{Circuit Diagrams}
+\section{Main Board}
+\cleardoublepage
+\section{Line Printer Driver Board}
+\cleardoublepage
+\section{Card Punch Driver Board}
+\cleardoublepage
+\section{Card Reader Driver Board}
+\cleardoublepage
+\section{Paper Tape Punch Driver Board}
+\cleardoublepage
+\section{Paper Tape Reader Driver Board}
+\chapter{PCB Masks}
+\section{Main Board}
+\cleardoublepage
+\section{Line Printer Driver Board}
+\cleardoublepage
+\section{Card Punch Driver Board}
+\cleardoublepage
+\section{Card Reader Driver Board}
+\cleardoublepage
+\section{Paper Tape Punch Driver Board}
+\cleardoublepage
+\section{Paper Tape Reader Driver Board}
+\chapter{Part Drawings}
+\backmatter
 \end{document}
