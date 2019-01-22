@@ -1,6 +1,8 @@
 \documentclass{book}
 \usepackage{tikz-timing}
 \usepackage{listings}
+%\usepackage{biblatex}
+%\addbibresource{mainframe.bib}
 \begin{document}
 \frontmatter
 \title{Documentation for z80 Mainframe}
@@ -36,12 +38,14 @@ Dedicated to caffeine for giving me the energy to write this and sleep deprivati
 \listoftables
 \mainmatter
 \chapter{Main Board}
+%\cite{ciarcia81}
+\nocite{*}
 \chapter{Dot Matrix Printer}
 The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as shown in figure~(null pointer).
 \begin{figure}[h]
 \centering
 \begin{tikztimingtable}
-$\mathrm{DATA\:0-7}$         &   UU7D{MEM 0x0800}7D{MEM 0x0801}XX7D{MEM 0x0850}7D{0x0D}UU\\
+$\mathrm{DATA\:0-7}$         &   UU7D{\textnormal{MEM 0x0800}}7D{\textnormal{MEM 0x0801}}XX7D{\textnormal{MEM 0x0850}}7D{\textnormal{0x0D}}UU\\
 $\overline{\mathrm{STROBE}}$ &   HHHLHHHHHHLHHHHHXXHLHHHHHHLHHHHHHH\\
 $\overline{\mathrm{BUSY}}$   &   HHHHHHHHLHHHHHHLXXHHHHHHLHHHHHHLHH\\
 \end{tikztimingtable}
@@ -51,8 +55,8 @@ $\overline{\mathrm{BUSY}}$   &   HHHHHHHHLHHHHHHLXXHHHHHHLHHHHHHLHH\\
 \begin{figure}[h]
 \centering
 \begin{tikztimingtable}
-$\mathrm{ADDR\:0-15}$          &   U8D{0x00FB}UU6D{0x0800}XXX6D{0x0850}UUUU\\
-$\mathrm{DATA\:0-7}$           &   UU7D{Option Byte}UUXX4D{Data}XXXXX4D{In}UUUU\\
+$\mathrm{ADDR\:0-15}$          &   U8D{\textnormal{0x00FB}}UU6D{\textnormal{0x0800}}XXX6D{\textnormal{0x0850}}UUUU\\
+$\mathrm{DATA\:0-7}$           &   UU7D{\textnormal{Option Byte}}UUXX4D{\textnormal{Data}}XXXXX4D{\textnormal{In}}UUUU\\
 $\overline{\mathrm{WAIT}}$    &   UUUULLLLHHHHHHHHHHHHHHHHHHHHHU\\
 $\overline{\mathrm{MREQ}}$    &   UHHHHHHHHHHHLLLLLHXXHLLLLLHHHU\\
 $\overline{\mathrm{IORQ}}$    &   UHHLLLLHHHHHHHHHHHHHHHHHHHHHHU\\
@@ -114,4 +118,12 @@ $\overline{\mathrm{BUSACK}}$  &   UHHHHHHLLLLLLLLLLLLLLLLLLLLLHH\\
 \section{Paper Tape Reader Driver Board}
 \chapter{Part Drawings}
 \backmatter
+\bibliographystyle{plain}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{mainframe}
+\cleardoublepage
+\section*{Fonts}
+This was typeset in Computer Modern using pdf\LaTeX{} and bib\TeX{}.
+The timing diagrams were made with the tikz-timing package.
+The code listings were made with the listings package
 \end{document}
