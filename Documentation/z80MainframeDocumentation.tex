@@ -38,8 +38,11 @@ Dedicated to caffeine for giving me the energy to write this and sleep deprivati
 \listoftables
 \mainmatter
 \chapter{Main Board}
-%\cite{ciarcia81}
-\nocite{*}
+The system is designed to use one higher wattage powersupply to provide the low voltage for the peripherals and main board. For the system as shown here, the supply should be rated at least seven amperes at five volts and fifteen amperes at twelve volts for a combined two hundred fifteen watts of total power. If additional peripherals are expected to be added, then the power suppy should be of a higher wattage so that the whole system can be powered from a unified supply to avoid the risk of ground loops that could induce exxecive noise.
+
+For the rear panel connections, any connectors may be used but it is advised to use incompatable connectors for the low voltage and high voltage connections to avoid accidental interconnection. For this reason, the parts list specifies NEMA L5-15 plugs and recepticals for the high voltage and NEMA L5-20 plugs and recepticals for the low voltage(See Table~\ref{tab:partlist} on pg~\pageref{tab:partlist})
+
+The z80 mainframe was designed to be modular and expandable. It acomplishes this by having a simple interface that brings out the lines from the main bus necessary for IO control and direct memory access. The system is limited to 232 connected peripherals because of the limitations of the z80's IO addressing technique. The z80 only uses the lower 8 bits of the address bus for IO addressing while the contents of the accumulator are placed on the upper 8 bits in teh case of  the IN A,(n) instruction\cite[p.~295]{zlg:z80}
 \chapter{Dot Matrix Printer}
 The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as shown in figure~(null pointer).
 \begin{figure}[h]
@@ -72,12 +75,29 @@ $\overline{\mathrm{BUSACK}}$  &   UHHHHHHLLLLLLLLLLLLLLLLLLLLLHH\\
 \caption{Main Bus to Printer Driver Timing}
 \label{fig:lpdrivertiming}
 \end{figure}
-\chapter{Card Punch}
-\chapter{Card Reader}
-\chapter{Paper Tape Reader}
-\chapter{Paper Tape Punch}
+\chapter{Card Punch \& Reader}
+\chapter{Paper Tape Punch \& Reader}
 \appendix
 \chapter{Part List}
+\begin{tabular}{| l | l | l | r | r | r |}
+\hline
+\label{tab:partlist}
+Source & Part Number & Description & Quantity & Price/each & Line Total \\ \hline
+McMaster & 7162K29 & L5-15P Cable Mount & 1 & \$9.15 & \$9.15\\ \hline
+McMaster & 7162K32 & L5-15R Cable Mount & 2 & \$16.29 & \$32.58\\ \hline
+McMaster & 7162K8 & L5-15P Panel Mount & 2 & \$12.06 & \$24.12\\ \hline
+McMaster & 7162K77 & L5-15R Panel Mount & 1 & \$16.00 & \$9.15\\ \hline
+McMaster & 7162K36 & L5-20P Cable Mount & 5 & \$11.59 & \$57.95\\ \hline
+McMaster & 7162K38 & L5-20R Cable Mount & 5 & \$18.00 & \$90.00\\ \hline
+McMaster & 7162K9 & L5-20P Panel Mount & 3 & \$14.65 & \$43.95\\ \hline
+McMaster & 7162K94 & L5-20R Panel Mount & 5 & \$20.59 & \$102.95\\ \hline
+McMaster & 7422K22  & 16/3 SJOOW Cable & 70 & \$0.72/ft & \$50.40\\ \hline
+Mouser & ATMEGA328 & 8-bit Microcontroler & 5 & \$1.96 & \$9.80\\ \hline
+Mouser & Z84C0010PEG & CMOS Z80 CPU & 1 & \$5.36 & \$5.36\\ \hline
+Mouser & AT28C64B-15PU & 8Kx8 EEPROM & 1 & \$3.13 & \$3.13\\ \hline
+Mouser & 71256SA12TPG & 32Kx8 SRAM & 2 & \$3.13 & \$6.26\\ \hline
+MFN & PN & Desc & 0 & \$0.00 & \$0.00\\ \hline
+\end{tabular}
 \chapter{Code Listings}
 \lstset{numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt}
 \section{ROM Listing}
@@ -97,25 +117,17 @@ $\overline{\mathrm{BUSACK}}$  &   UHHHHHHLLLLLLLLLLLLLLLLLLLLLHH\\
 \cleardoublepage
 \section{Line Printer Driver Board}
 \cleardoublepage
-\section{Card Punch Driver Board}
+\section{Card Punch \& Reader Driver Board}
 \cleardoublepage
-\section{Card Reader Driver Board}
-\cleardoublepage
-\section{Paper Tape Punch Driver Board}
-\cleardoublepage
-\section{Paper Tape Reader Driver Board}
+\section{Paper Tape Punch \& Reader Driver Board}
 \chapter{PCB Masks}
 \section{Main Board}
 \cleardoublepage
 \section{Line Printer Driver Board}
 \cleardoublepage
-\section{Card Punch Driver Board}
+\section{Card Punch \& Reader Driver Board}
 \cleardoublepage
-\section{Card Reader Driver Board}
-\cleardoublepage
-\section{Paper Tape Punch Driver Board}
-\cleardoublepage
-\section{Paper Tape Reader Driver Board}
+\section{Paper Tape Punch \& Reader Driver Board}
 \chapter{Part Drawings}
 \backmatter
 \bibliographystyle{plain}
