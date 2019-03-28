@@ -15,7 +15,3 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
-
-# My filetypes
-*.sch linguist-language=KiCad Schematic
-*.bak linguist-language=KiCad Schematic
