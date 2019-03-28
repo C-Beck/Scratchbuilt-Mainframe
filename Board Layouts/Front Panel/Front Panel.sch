@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Front Panel-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Front Panel"
 Date "2019-03-23"
 Rev "A"
@@ -2282,4 +2283,14 @@ F 3 "" H 11500 1250 50  0001 C CNN
 	1    11500 1250
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 6750 4850 550  500 
+U 5C99B4A2
+F0 "Hex to 7-Segment Decoder" 50
+F1 "Hex to 7-Segment Decoder.sch" 50
+F2 "A0" I L 6750 4950 50 
+F3 "A1" I L 6750 5050 50 
+F4 "A2" I L 6750 5150 50 
+F5 "A3" I L 6750 5250 50 
+$EndSheet
 $EndSCHEMATC
