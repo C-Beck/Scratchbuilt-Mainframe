@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCA9615
+D 2-channel multipoint Fm+ dI2C-bus buffer with hot-swap logic
+K I2C Differential
+F https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf
+$ENDCMP
+#
+#End Doc Library

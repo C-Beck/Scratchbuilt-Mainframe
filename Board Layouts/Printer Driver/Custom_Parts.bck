@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCA9615
+F https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf
+$ENDCMP
+#
+#End Doc Library
