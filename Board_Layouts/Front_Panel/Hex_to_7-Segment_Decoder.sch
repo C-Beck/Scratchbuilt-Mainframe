@@ -1,0 +1,1813 @@
+EESchema Schematic File Version 4
+LIBS:Front Panel-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 2
+Title "Hex To 7-Segment Decoder"
+Date "2019-03-25"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS154 U11
+U 1 1 5C99E0EE
+P 6100 4700
+F 0 "U11" H 6300 5650 50  0000 C CNN
+F 1 "74LS154" H 6300 5550 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W7.62mm" H 6100 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS154" H 6100 4700 50  0001 C CNN
+	1    6100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D44
+U 1 1 5C9A34AB
+P 7150 4050
+F 0 "D44" H 4850 4050 50  0000 C CNN
+F 1 "D" H 7150 3925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4050 50  0001 C CNN
+F 3 "~" H 7150 4050 50  0001 C CNN
+	1    7150 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D54
+U 1 1 5C9A3B44
+P 7500 4050
+F 0 "D54" H 5350 4050 50  0000 C CNN
+F 1 "D" H 7500 3925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4050 50  0001 C CNN
+F 3 "~" H 7500 4050 50  0001 C CNN
+	1    7500 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 4000 6650 4000
+Wire Wire Line
+	6600 4100 7000 4100
+Wire Wire Line
+	6600 4200 6650 4200
+Wire Wire Line
+	6600 4300 6650 4300
+Wire Wire Line
+	6600 4400 7000 4400
+Wire Wire Line
+	6600 4500 6650 4500
+Wire Wire Line
+	6600 4600 6650 4600
+Wire Wire Line
+	6600 4700 6650 4700
+Wire Wire Line
+	6600 4800 6650 4800
+Wire Wire Line
+	6600 4900 6650 4900
+Wire Wire Line
+	6600 5000 6650 5000
+Wire Wire Line
+	6600 5100 7350 5100
+Wire Wire Line
+	6600 5200 6650 5200
+Wire Wire Line
+	6600 5400 6650 5400
+Wire Wire Line
+	6600 5300 7000 5300
+Wire Wire Line
+	6600 5500 6650 5500
+$Comp
+L Device:D D45
+U 1 1 5C9B1670
+P 7150 4150
+F 0 "D45" H 4850 4150 50  0000 C CNN
+F 1 "D" H 7150 4025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4150 50  0001 C CNN
+F 3 "~" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 5C9B2873
+P 6800 4250
+F 0 "D33" H 4350 4250 50  0000 C CNN
+F 1 "D" H 6800 4125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4250 50  0001 C CNN
+F 3 "~" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D46
+U 1 1 5C9B2879
+P 7150 4250
+F 0 "D46" H 4850 4250 50  0000 C CNN
+F 1 "D" H 7150 4125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4250 50  0001 C CNN
+F 3 "~" H 7150 4250 50  0001 C CNN
+	1    7150 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D67
+U 1 1 5C9B2885
+P 7850 4250
+F 0 "D67" H 5850 4250 50  0000 C CNN
+F 1 "D" H 7850 4125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 4250 50  0001 C CNN
+F 3 "~" H 7850 4250 50  0001 C CNN
+	1    7850 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D97
+U 1 1 5C9B2897
+P 8900 4250
+F 0 "D97" H 7350 4250 50  0000 C CNN
+F 1 "D" H 8900 4125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4250 50  0001 C CNN
+F 3 "~" H 8900 4250 50  0001 C CNN
+	1    8900 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D47
+U 1 1 5C9B396A
+P 7150 4350
+F 0 "D47" H 4850 4350 50  0000 C CNN
+F 1 "D" H 7150 4225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4350 50  0001 C CNN
+F 3 "~" H 7150 4350 50  0001 C CNN
+	1    7150 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D56
+U 1 1 5C9B3970
+P 7500 4350
+F 0 "D56" H 5350 4350 50  0000 C CNN
+F 1 "D" H 7500 4225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4350 50  0001 C CNN
+F 3 "~" H 7500 4350 50  0001 C CNN
+	1    7500 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D98
+U 1 1 5C9B3988
+P 8900 4350
+F 0 "D98" H 7350 4350 50  0000 C CNN
+F 1 "D" H 8900 4225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4350 50  0001 C CNN
+F 3 "~" H 8900 4350 50  0001 C CNN
+	1    8900 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D57
+U 1 1 5C9B40DF
+P 7500 4450
+F 0 "D57" H 5350 4450 50  0000 C CNN
+F 1 "D" H 7500 4325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4450 50  0001 C CNN
+F 3 "~" H 7500 4450 50  0001 C CNN
+	1    7500 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D87
+U 1 1 5C9B40F1
+P 8550 4450
+F 0 "D87" H 6850 4450 50  0000 C CNN
+F 1 "D" H 8550 4325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 4450 50  0001 C CNN
+F 3 "~" H 8550 4450 50  0001 C CNN
+	1    8550 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D99
+U 1 1 5C9B40F7
+P 8900 4450
+F 0 "D99" H 7350 4450 50  0000 C CNN
+F 1 "D" H 8900 4325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4450 50  0001 C CNN
+F 3 "~" H 8900 4450 50  0001 C CNN
+	1    8900 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D35
+U 1 1 5C9B56F4
+P 6800 4550
+F 0 "D35" H 4350 4550 50  0000 C CNN
+F 1 "D" H 6800 4425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4550 50  0001 C CNN
+F 3 "~" H 6800 4550 50  0001 C CNN
+	1    6800 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D58
+U 1 1 5C9B5700
+P 7500 4550
+F 0 "D58" H 5350 4550 50  0000 C CNN
+F 1 "D" H 7500 4425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4550 50  0001 C CNN
+F 3 "~" H 7500 4550 50  0001 C CNN
+	1    7500 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D69
+U 1 1 5C9B5706
+P 7850 4550
+F 0 "D69" H 5850 4550 50  0000 C CNN
+F 1 "D" H 7850 4425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 4550 50  0001 C CNN
+F 3 "~" H 7850 4550 50  0001 C CNN
+	1    7850 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D88
+U 1 1 5C9B5712
+P 8550 4550
+F 0 "D88" H 6850 4550 50  0000 C CNN
+F 1 "D" H 8550 4425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 4550 50  0001 C CNN
+F 3 "~" H 8550 4550 50  0001 C CNN
+	1    8550 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D100
+U 1 1 5C9B5718
+P 8900 4550
+F 0 "D100" H 7350 4550 50  0000 C CNN
+F 1 "D" H 8900 4425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4550 50  0001 C CNN
+F 3 "~" H 8900 4550 50  0001 C CNN
+	1    8900 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D36
+U 1 1 5C9B611E
+P 6800 4650
+F 0 "D36" H 4350 4650 50  0000 C CNN
+F 1 "D" H 6800 4525 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4650 50  0001 C CNN
+F 3 "~" H 6800 4650 50  0001 C CNN
+	1    6800 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D59
+U 1 1 5C9B612A
+P 7500 4650
+F 0 "D59" H 5350 4650 50  0000 C CNN
+F 1 "D" H 7500 4525 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4650 50  0001 C CNN
+F 3 "~" H 7500 4650 50  0001 C CNN
+	1    7500 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D37
+U 1 1 5C9B6CD4
+P 6800 4750
+F 0 "D37" H 4350 4750 50  0000 C CNN
+F 1 "D" H 6800 4625 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4750 50  0001 C CNN
+F 3 "~" H 6800 4750 50  0001 C CNN
+	1    6800 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D49
+U 1 1 5C9B6CDA
+P 7150 4750
+F 0 "D49" H 4850 4750 50  0000 C CNN
+F 1 "D" H 7150 4625 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4750 50  0001 C CNN
+F 3 "~" H 7150 4750 50  0001 C CNN
+	1    7150 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D60
+U 1 1 5C9B6CE0
+P 7500 4750
+F 0 "D60" H 5350 4750 50  0000 C CNN
+F 1 "D" H 7500 4625 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4750 50  0001 C CNN
+F 3 "~" H 7500 4750 50  0001 C CNN
+	1    7500 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D38
+U 1 1 5C9B77FE
+P 6800 4850
+F 0 "D38" H 4350 4850 50  0000 C CNN
+F 1 "D" H 6800 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4850 50  0001 C CNN
+F 3 "~" H 6800 4850 50  0001 C CNN
+	1    6800 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D50
+U 1 1 5C9B7804
+P 7150 4850
+F 0 "D50" H 4850 4850 50  0000 C CNN
+F 1 "D" H 7150 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4850 50  0001 C CNN
+F 3 "~" H 7150 4850 50  0001 C CNN
+	1    7150 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D61
+U 1 1 5C9B780A
+P 7500 4850
+F 0 "D61" H 5350 4850 50  0000 C CNN
+F 1 "D" H 7500 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4850 50  0001 C CNN
+F 3 "~" H 7500 4850 50  0001 C CNN
+	1    7500 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D71
+U 1 1 5C9B7810
+P 7850 4850
+F 0 "D71" H 5850 4850 50  0000 C CNN
+F 1 "D" H 7850 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 4850 50  0001 C CNN
+F 3 "~" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D79
+U 1 1 5C9B7816
+P 8200 4850
+F 0 "D79" H 6350 4850 50  0000 C CNN
+F 1 "D" H 8200 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 4850 50  0001 C CNN
+F 3 "~" H 8200 4850 50  0001 C CNN
+	1    8200 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D90
+U 1 1 5C9B781C
+P 8550 4850
+F 0 "D90" H 6850 4850 50  0000 C CNN
+F 1 "D" H 8550 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 4850 50  0001 C CNN
+F 3 "~" H 8550 4850 50  0001 C CNN
+	1    8550 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D102
+U 1 1 5C9B7822
+P 8900 4850
+F 0 "D102" H 7350 4850 50  0000 C CNN
+F 1 "D" H 8900 4725 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4850 50  0001 C CNN
+F 3 "~" H 8900 4850 50  0001 C CNN
+	1    8900 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D39
+U 1 1 5C9B819C
+P 6800 4950
+F 0 "D39" H 4350 4950 50  0000 C CNN
+F 1 "D" H 6800 4825 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4950 50  0001 C CNN
+F 3 "~" H 6800 4950 50  0001 C CNN
+	1    6800 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D51
+U 1 1 5C9B81A2
+P 7150 4950
+F 0 "D51" H 4850 4950 50  0000 C CNN
+F 1 "D" H 7150 4825 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4950 50  0001 C CNN
+F 3 "~" H 7150 4950 50  0001 C CNN
+	1    7150 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D62
+U 1 1 5C9B81A8
+P 7500 4950
+F 0 "D62" H 5350 4950 50  0000 C CNN
+F 1 "D" H 7500 4825 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4950 50  0001 C CNN
+F 3 "~" H 7500 4950 50  0001 C CNN
+	1    7500 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D91
+U 1 1 5C9B81BA
+P 8550 4950
+F 0 "D91" H 6850 4950 50  0000 C CNN
+F 1 "D" H 8550 4825 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 4950 50  0001 C CNN
+F 3 "~" H 8550 4950 50  0001 C CNN
+	1    8550 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D103
+U 1 1 5C9B81C0
+P 8900 4950
+F 0 "D103" H 7350 4950 50  0000 C CNN
+F 1 "D" H 8900 4825 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4950 50  0001 C CNN
+F 3 "~" H 8900 4950 50  0001 C CNN
+	1    8900 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D40
+U 1 1 5C9B8C69
+P 6800 5050
+F 0 "D40" H 4350 5050 50  0000 C CNN
+F 1 "D" H 6800 4925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 5050 50  0001 C CNN
+F 3 "~" H 6800 5050 50  0001 C CNN
+	1    6800 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D52
+U 1 1 5C9B8C6F
+P 7150 5050
+F 0 "D52" H 4850 5050 50  0000 C CNN
+F 1 "D" H 7150 4925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 5050 50  0001 C CNN
+F 3 "~" H 7150 5050 50  0001 C CNN
+	1    7150 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D63
+U 1 1 5C9B8C75
+P 7500 5050
+F 0 "D63" H 5350 5050 50  0000 C CNN
+F 1 "D" H 7500 4925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 5050 50  0001 C CNN
+F 3 "~" H 7500 5050 50  0001 C CNN
+	1    7500 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D80
+U 1 1 5C9B8C81
+P 8200 5050
+F 0 "D80" H 6350 5050 50  0000 C CNN
+F 1 "D" H 8200 4925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 5050 50  0001 C CNN
+F 3 "~" H 8200 5050 50  0001 C CNN
+	1    8200 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D92
+U 1 1 5C9B8C87
+P 8550 5050
+F 0 "D92" H 6850 5050 50  0000 C CNN
+F 1 "D" H 8550 4925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 5050 50  0001 C CNN
+F 3 "~" H 8550 5050 50  0001 C CNN
+	1    8550 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D104
+U 1 1 5C9B8C8D
+P 8900 5050
+F 0 "D104" H 7350 5050 50  0000 C CNN
+F 1 "D" H 8900 4925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 5050 50  0001 C CNN
+F 3 "~" H 8900 5050 50  0001 C CNN
+	1    8900 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D64
+U 1 1 5C9B9988
+P 7500 5150
+F 0 "D64" H 5350 5150 50  0000 C CNN
+F 1 "D" H 7500 5025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 5150 50  0001 C CNN
+F 3 "~" H 7500 5150 50  0001 C CNN
+	1    7500 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D72
+U 1 1 5C9B998E
+P 7850 5150
+F 0 "D72" H 5850 5150 50  0000 C CNN
+F 1 "D" H 7850 5025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 5150 50  0001 C CNN
+F 3 "~" H 7850 5150 50  0001 C CNN
+	1    7850 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D81
+U 1 1 5C9B9994
+P 8200 5150
+F 0 "D81" H 6350 5150 50  0000 C CNN
+F 1 "D" H 8200 5025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 5150 50  0001 C CNN
+F 3 "~" H 8200 5150 50  0001 C CNN
+	1    8200 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D93
+U 1 1 5C9B999A
+P 8550 5150
+F 0 "D93" H 6850 5150 50  0000 C CNN
+F 1 "D" H 8550 5025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 5150 50  0001 C CNN
+F 3 "~" H 8550 5150 50  0001 C CNN
+	1    8550 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D105
+U 1 1 5C9B99A0
+P 8900 5150
+F 0 "D105" H 7350 5150 50  0000 C CNN
+F 1 "D" H 8900 5025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 5150 50  0001 C CNN
+F 3 "~" H 8900 5150 50  0001 C CNN
+	1    8900 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D41
+U 1 1 5C9BAD05
+P 6800 5250
+F 0 "D41" H 4350 5250 50  0000 C CNN
+F 1 "D" H 6800 5125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 5250 50  0001 C CNN
+F 3 "~" H 6800 5250 50  0001 C CNN
+	1    6800 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D73
+U 1 1 5C9BAD17
+P 7850 5250
+F 0 "D73" H 5850 5250 50  0000 C CNN
+F 1 "D" H 7850 5125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 5250 50  0001 C CNN
+F 3 "~" H 7850 5250 50  0001 C CNN
+	1    7850 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D82
+U 1 1 5C9BAD1D
+P 8200 5250
+F 0 "D82" H 6350 5250 50  0000 C CNN
+F 1 "D" H 8200 5125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 5250 50  0001 C CNN
+F 3 "~" H 8200 5250 50  0001 C CNN
+	1    8200 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D94
+U 1 1 5C9BAD23
+P 8550 5250
+F 0 "D94" H 6850 5250 50  0000 C CNN
+F 1 "D" H 8550 5125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 5250 50  0001 C CNN
+F 3 "~" H 8550 5250 50  0001 C CNN
+	1    8550 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D106
+U 1 1 5C9BAD29
+P 8900 5250
+F 0 "D106" H 7350 5250 50  0000 C CNN
+F 1 "D" H 8900 5125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 5250 50  0001 C CNN
+F 3 "~" H 8900 5250 50  0001 C CNN
+	1    8900 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D53
+U 1 1 5C9BB8C1
+P 7150 5350
+F 0 "D53" H 4850 5350 50  0000 C CNN
+F 1 "D" H 7150 5225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 5350 50  0001 C CNN
+F 3 "~" H 7150 5350 50  0001 C CNN
+	1    7150 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D65
+U 1 1 5C9BB8C7
+P 7500 5350
+F 0 "D65" H 5350 5350 50  0000 C CNN
+F 1 "D" H 7500 5225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 5350 50  0001 C CNN
+F 3 "~" H 7500 5350 50  0001 C CNN
+	1    7500 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D74
+U 1 1 5C9BB8CD
+P 7850 5350
+F 0 "D74" H 5850 5350 50  0000 C CNN
+F 1 "D" H 7850 5225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 5350 50  0001 C CNN
+F 3 "~" H 7850 5350 50  0001 C CNN
+	1    7850 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D83
+U 1 1 5C9BB8D3
+P 8200 5350
+F 0 "D83" H 6350 5350 50  0000 C CNN
+F 1 "D" H 8200 5225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 5350 50  0001 C CNN
+F 3 "~" H 8200 5350 50  0001 C CNN
+	1    8200 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D107
+U 1 1 5C9BB8DF
+P 8900 5350
+F 0 "D107" H 7350 5350 50  0000 C CNN
+F 1 "D" H 8900 5225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 5350 50  0001 C CNN
+F 3 "~" H 8900 5350 50  0001 C CNN
+	1    8900 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D42
+U 1 1 5C9BC2FC
+P 6800 5450
+F 0 "D42" H 4350 5450 50  0000 C CNN
+F 1 "D" H 6800 5325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 5450 50  0001 C CNN
+F 3 "~" H 6800 5450 50  0001 C CNN
+	1    6800 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D75
+U 1 1 5C9BC30E
+P 7850 5450
+F 0 "D75" H 5850 5450 50  0000 C CNN
+F 1 "D" H 7850 5325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 5450 50  0001 C CNN
+F 3 "~" H 7850 5450 50  0001 C CNN
+	1    7850 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D84
+U 1 1 5C9BC314
+P 8200 5450
+F 0 "D84" H 6350 5450 50  0000 C CNN
+F 1 "D" H 8200 5325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 5450 50  0001 C CNN
+F 3 "~" H 8200 5450 50  0001 C CNN
+	1    8200 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D95
+U 1 1 5C9BC31A
+P 8550 5450
+F 0 "D95" H 6850 5450 50  0000 C CNN
+F 1 "D" H 8550 5325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 5450 50  0001 C CNN
+F 3 "~" H 8550 5450 50  0001 C CNN
+	1    8550 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D108
+U 1 1 5C9BC320
+P 8900 5450
+F 0 "D108" H 7350 5450 50  0000 C CNN
+F 1 "D" H 8900 5325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 5450 50  0001 C CNN
+F 3 "~" H 8900 5450 50  0001 C CNN
+	1    8900 5450
+	-1   0    0    1   
+$EndComp
+Connection ~ 6950 4250
+Connection ~ 6950 4550
+Wire Wire Line
+	6950 4550 6950 4650
+Connection ~ 6950 4650
+Wire Wire Line
+	6950 4650 6950 4750
+Connection ~ 6950 4750
+Wire Wire Line
+	6950 4750 6950 4850
+Connection ~ 6950 4850
+Wire Wire Line
+	6950 4850 6950 4950
+Connection ~ 6950 4950
+Wire Wire Line
+	6950 4950 6950 5050
+Connection ~ 6950 5050
+Connection ~ 6950 5250
+Connection ~ 6950 5450
+Wire Wire Line
+	6950 5450 6950 5550
+Connection ~ 7300 4150
+Wire Wire Line
+	7300 4150 7300 4050
+Connection ~ 7300 4250
+Wire Wire Line
+	7300 4250 7300 4150
+Connection ~ 7300 4350
+Wire Wire Line
+	7300 4350 7300 4250
+Connection ~ 7300 4750
+Connection ~ 7300 4850
+Wire Wire Line
+	7300 4850 7300 4750
+Connection ~ 7300 4950
+Wire Wire Line
+	7300 4950 7300 4850
+Connection ~ 7300 5050
+Wire Wire Line
+	7300 5050 7300 4950
+Connection ~ 7650 4350
+Connection ~ 7650 4450
+Wire Wire Line
+	7650 4450 7650 4350
+Connection ~ 7650 4550
+Wire Wire Line
+	7650 4550 7650 4450
+Connection ~ 7650 4650
+Wire Wire Line
+	7650 4650 7650 4550
+Connection ~ 7650 4750
+Wire Wire Line
+	7650 4750 7650 4650
+Connection ~ 7650 4850
+Wire Wire Line
+	7650 4850 7650 4750
+Connection ~ 7650 4950
+Wire Wire Line
+	7650 4950 7650 4850
+Connection ~ 7650 5050
+Wire Wire Line
+	7650 5050 7650 4950
+Connection ~ 7650 5150
+Wire Wire Line
+	7650 5150 7650 5050
+Connection ~ 8000 4250
+Connection ~ 8000 4550
+Connection ~ 8000 4850
+Connection ~ 8000 5150
+Connection ~ 8000 5250
+Wire Wire Line
+	8000 5250 8000 5150
+Connection ~ 8000 5350
+Wire Wire Line
+	8000 5350 8000 5250
+Wire Wire Line
+	8000 5450 8000 5350
+Connection ~ 8350 4850
+Connection ~ 8350 5050
+Wire Wire Line
+	8350 5050 8350 5150
+Connection ~ 8350 5150
+Wire Wire Line
+	8350 5150 8350 5250
+Connection ~ 8350 5250
+Wire Wire Line
+	8350 5250 8350 5350
+Connection ~ 8350 5350
+Wire Wire Line
+	8350 5350 8350 5450
+Connection ~ 8350 5450
+Wire Wire Line
+	8350 5450 8350 5550
+Connection ~ 8700 4450
+Connection ~ 8700 4550
+Wire Wire Line
+	8700 4550 8700 4450
+Connection ~ 8700 4850
+Connection ~ 8700 4950
+Wire Wire Line
+	8700 4950 8700 4850
+Connection ~ 8700 5050
+Wire Wire Line
+	8700 5050 8700 4950
+Connection ~ 8700 5150
+Wire Wire Line
+	8700 5150 8700 5050
+Connection ~ 8700 5250
+Wire Wire Line
+	8700 5250 8700 5150
+Connection ~ 8700 5450
+Connection ~ 9050 4250
+Wire Wire Line
+	9050 4250 9050 4350
+Connection ~ 9050 4350
+Wire Wire Line
+	9050 4350 9050 4450
+Connection ~ 9050 4450
+Wire Wire Line
+	9050 4450 9050 4550
+Connection ~ 9050 4550
+Connection ~ 9050 4850
+Wire Wire Line
+	9050 4850 9050 4950
+Connection ~ 9050 4950
+Wire Wire Line
+	9050 4950 9050 5050
+Connection ~ 9050 5050
+Wire Wire Line
+	9050 5050 9050 5150
+Connection ~ 9050 5150
+Wire Wire Line
+	9050 5150 9050 5250
+Connection ~ 9050 5250
+Wire Wire Line
+	9050 5250 9050 5350
+Connection ~ 9050 5350
+Wire Wire Line
+	9050 5350 9050 5450
+Connection ~ 9050 5450
+Wire Wire Line
+	9050 5450 9050 5550
+Wire Wire Line
+	9050 4550 9050 4650
+Connection ~ 9050 4650
+$Comp
+L Device:D D101
+U 1 1 5C9B6142
+P 8900 4650
+F 0 "D101" H 7350 4650 50  0000 C CNN
+F 1 "D" H 8900 4525 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 4650 50  0001 C CNN
+F 3 "~" H 8900 4650 50  0001 C CNN
+	1    8900 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 4650 8700 4550
+Connection ~ 8700 4650
+$Comp
+L Device:D D89
+U 1 1 5C9B613C
+P 8550 4650
+F 0 "D89" H 6850 4650 50  0000 C CNN
+F 1 "D" H 8550 4525 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 4650 50  0001 C CNN
+F 3 "~" H 8550 4650 50  0001 C CNN
+	1    8550 4650
+	-1   0    0    1   
+$EndComp
+Connection ~ 8350 4650
+$Comp
+L Device:D D78
+U 1 1 5C9B6136
+P 8200 4650
+F 0 "D78" H 6350 4650 50  0000 C CNN
+F 1 "D" H 8200 4525 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 4650 50  0001 C CNN
+F 3 "~" H 8200 4650 50  0001 C CNN
+	1    8200 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 4650 8000 4550
+Connection ~ 8000 4650
+$Comp
+L Device:D D70
+U 1 1 5C9B6130
+P 7850 4650
+F 0 "D70" H 5850 4650 50  0000 C CNN
+F 1 "D" H 7850 4525 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 4650 50  0001 C CNN
+F 3 "~" H 7850 4650 50  0001 C CNN
+	1    7850 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 4450 7300 4350
+Connection ~ 7300 4450
+$Comp
+L Device:D D48
+U 1 1 5C9B40D9
+P 7150 4450
+F 0 "D48" H 4850 4450 50  0000 C CNN
+F 1 "D" H 7150 4325 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7150 4450 50  0001 C CNN
+F 3 "~" H 7150 4450 50  0001 C CNN
+	1    7150 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 4350 8000 4250
+Connection ~ 8000 4350
+$Comp
+L Device:D D68
+U 1 1 5C9B3976
+P 7850 4350
+F 0 "D68" H 5850 4350 50  0000 C CNN
+F 1 "D" H 7850 4225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 4350 50  0001 C CNN
+F 3 "~" H 7850 4350 50  0001 C CNN
+	1    7850 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 4250 6950 4350
+Connection ~ 6950 4350
+$Comp
+L Device:D D34
+U 1 1 5C9B3964
+P 6800 4350
+F 0 "D34" H 4350 4350 50  0000 C CNN
+F 1 "D" H 6800 4225 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4350 50  0001 C CNN
+F 3 "~" H 6800 4350 50  0001 C CNN
+	1    6800 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 4150 7650 4050
+Connection ~ 7650 4150
+$Comp
+L Device:D D55
+U 1 1 5C9B1676
+P 7500 4150
+F 0 "D55" H 5350 4150 50  0000 C CNN
+F 1 "D" H 7500 4025 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7500 4150 50  0001 C CNN
+F 3 "~" H 7500 4150 50  0001 C CNN
+	1    7500 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D86
+U 1 1 5C9A489B
+P 8550 4050
+F 0 "D86" H 6850 4050 50  0000 C CNN
+F 1 "D" H 8550 3925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 4050 50  0001 C CNN
+F 3 "~" H 8550 4050 50  0001 C CNN
+	1    8550 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D76
+U 1 1 5C9A4311
+P 8200 4050
+F 0 "D76" H 6350 4050 50  0000 C CNN
+F 1 "D" H 8200 3925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 4050 50  0001 C CNN
+F 3 "~" H 8200 4050 50  0001 C CNN
+	1    8200 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D66
+U 1 1 5C9A3F5B
+P 7850 4050
+F 0 "D66" H 5850 4050 50  0000 C CNN
+F 1 "D" H 7850 3925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 7850 4050 50  0001 C CNN
+F 3 "~" H 7850 4050 50  0001 C CNN
+	1    7850 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D32
+U 1 1 5C99E845
+P 6800 4050
+F 0 "D32" H 4350 4050 50  0000 C CNN
+F 1 "D" H 6800 3925 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 4050 50  0001 C CNN
+F 3 "~" H 6800 4050 50  0001 C CNN
+	1    6800 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 4050 6950 4250
+Wire Wire Line
+	8000 4050 8000 4250
+Wire Wire Line
+	9050 4050 9050 4250
+Wire Wire Line
+	8350 4050 8350 4250
+Connection ~ 8350 4250
+$Comp
+L Device:D D77
+U 1 1 5C9B288B
+P 8200 4250
+F 0 "D77" H 6350 4250 50  0000 C CNN
+F 1 "D" H 8200 4125 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 4250 50  0001 C CNN
+F 3 "~" H 8200 4250 50  0001 C CNN
+	1    8200 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 4150 7650 4350
+Wire Wire Line
+	8700 4050 8700 4450
+Wire Wire Line
+	8000 4350 8000 4550
+Wire Wire Line
+	6950 4350 6950 4550
+Wire Wire Line
+	8350 4250 8350 4650
+Wire Wire Line
+	7300 4450 7300 4750
+Wire Wire Line
+	8000 4650 8000 4850
+Wire Wire Line
+	8350 4650 8350 4850
+Wire Wire Line
+	8700 4650 8700 4850
+Wire Wire Line
+	9050 4650 9050 4850
+Wire Wire Line
+	8350 4850 8350 5050
+Wire Wire Line
+	8000 4850 8000 5150
+Wire Wire Line
+	6950 5050 6950 5250
+Wire Wire Line
+	7300 5050 7300 5350
+Wire Wire Line
+	7650 5150 7650 5350
+Wire Wire Line
+	6950 5250 6950 5450
+Wire Wire Line
+	8700 5250 8700 5450
+$Comp
+L Device:D D43
+U 1 1 5C9D59F0
+P 6800 5550
+F 0 "D43" H 4350 5550 50  0000 C CNN
+F 1 "D" H 6800 5425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 6800 5550 50  0001 C CNN
+F 3 "~" H 6800 5550 50  0001 C CNN
+	1    6800 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D85
+U 1 1 5C9D5C8C
+P 8200 5550
+F 0 "D85" H 6350 5550 50  0000 C CNN
+F 1 "D" H 8200 5425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8200 5550 50  0001 C CNN
+F 3 "~" H 8200 5550 50  0001 C CNN
+	1    8200 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D96
+U 1 1 5C9D62FC
+P 8550 5550
+F 0 "D96" H 6850 5550 50  0000 C CNN
+F 1 "D" H 8550 5425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8550 5550 50  0001 C CNN
+F 3 "~" H 8550 5550 50  0001 C CNN
+	1    8550 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 5550 8700 5450
+$Comp
+L Device:D D109
+U 1 1 5C9D66E2
+P 8900 5550
+F 0 "D109" H 7350 5550 50  0000 C CNN
+F 1 "D" H 8900 5425 50  0001 C CNN
+F 2 "Diode_THT:D_5W_P12.70mm_Horizontal" H 8900 5550 50  0001 C CNN
+F 3 "~" H 8900 5550 50  0001 C CNN
+	1    8900 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 4000 6650 4050
+Connection ~ 6650 4000
+Wire Wire Line
+	6650 4000 7000 4000
+Wire Wire Line
+	6650 4200 6650 4250
+Connection ~ 6650 4200
+Wire Wire Line
+	6650 4200 7000 4200
+Wire Wire Line
+	6650 4300 6650 4350
+Connection ~ 6650 4300
+Wire Wire Line
+	6650 4300 7000 4300
+Wire Wire Line
+	6650 4500 6650 4550
+Connection ~ 6650 4500
+Wire Wire Line
+	6650 4500 7350 4500
+Wire Wire Line
+	6650 4600 6650 4650
+Connection ~ 6650 4600
+Wire Wire Line
+	6650 4600 7350 4600
+Wire Wire Line
+	6650 4700 6650 4750
+Connection ~ 6650 4700
+Wire Wire Line
+	6650 4700 7000 4700
+Wire Wire Line
+	6650 4850 6650 4800
+Connection ~ 6650 4800
+Wire Wire Line
+	6650 4800 7000 4800
+Wire Wire Line
+	6650 4950 6650 4900
+Connection ~ 6650 4900
+Wire Wire Line
+	6650 4900 7000 4900
+Wire Wire Line
+	6650 5050 6650 5000
+Connection ~ 6650 5000
+Wire Wire Line
+	6650 5000 7000 5000
+Wire Wire Line
+	6650 5250 6650 5200
+Connection ~ 6650 5200
+Wire Wire Line
+	6650 5200 7700 5200
+Wire Wire Line
+	6650 5450 6650 5400
+Connection ~ 6650 5400
+Wire Wire Line
+	6650 5400 7700 5400
+Wire Wire Line
+	6650 5550 6650 5500
+Connection ~ 6650 5500
+Wire Wire Line
+	6650 5500 8050 5500
+Wire Wire Line
+	7000 5350 7000 5300
+Connection ~ 7000 5300
+Wire Wire Line
+	7000 5300 7350 5300
+Wire Wire Line
+	7000 5050 7000 5000
+Connection ~ 7000 5000
+Wire Wire Line
+	7000 5000 7350 5000
+Wire Wire Line
+	7000 4950 7000 4900
+Connection ~ 7000 4900
+Wire Wire Line
+	7000 4900 7350 4900
+Wire Wire Line
+	7000 4850 7000 4800
+Connection ~ 7000 4800
+Wire Wire Line
+	7000 4800 7350 4800
+Wire Wire Line
+	7000 4750 7000 4700
+Connection ~ 7000 4700
+Wire Wire Line
+	7000 4700 7350 4700
+Wire Wire Line
+	7000 4450 7000 4400
+Connection ~ 7000 4400
+Wire Wire Line
+	7000 4400 7350 4400
+Wire Wire Line
+	7000 4350 7000 4300
+Connection ~ 7000 4300
+Wire Wire Line
+	7000 4300 7350 4300
+Wire Wire Line
+	7000 4250 7000 4200
+Connection ~ 7000 4200
+Wire Wire Line
+	7000 4200 7700 4200
+Wire Wire Line
+	7000 4150 7000 4100
+Connection ~ 7000 4100
+Wire Wire Line
+	7000 4100 7350 4100
+Wire Wire Line
+	7000 4050 7000 4000
+Connection ~ 7000 4000
+Wire Wire Line
+	7000 4000 7350 4000
+Wire Wire Line
+	7350 4000 7350 4050
+Connection ~ 7350 4000
+Wire Wire Line
+	7350 4000 7700 4000
+Wire Wire Line
+	7350 4100 7350 4150
+Connection ~ 7350 4100
+Wire Wire Line
+	7350 4100 8800 4100
+Wire Wire Line
+	7350 4300 7350 4350
+Connection ~ 7350 4300
+Wire Wire Line
+	7350 4300 7700 4300
+Wire Wire Line
+	7350 4400 7350 4450
+Connection ~ 7350 4400
+Wire Wire Line
+	7350 4400 8400 4400
+Wire Wire Line
+	7350 4500 7350 4550
+Connection ~ 7350 4500
+Wire Wire Line
+	7350 4500 7700 4500
+Wire Wire Line
+	7350 4600 7350 4650
+Connection ~ 7350 4600
+Wire Wire Line
+	7350 4600 7700 4600
+Wire Wire Line
+	7350 4700 7350 4750
+Connection ~ 7350 4700
+Wire Wire Line
+	7350 4800 7350 4850
+Connection ~ 7350 4800
+Wire Wire Line
+	7350 4800 7700 4800
+Wire Wire Line
+	7350 4900 7350 4950
+Connection ~ 7350 4900
+Wire Wire Line
+	7350 4900 8400 4900
+Wire Wire Line
+	7350 5000 7350 5050
+Connection ~ 7350 5000
+Wire Wire Line
+	7350 5000 8050 5000
+Wire Wire Line
+	7350 5100 7350 5150
+Connection ~ 7350 5100
+Wire Wire Line
+	7350 5100 7700 5100
+Wire Wire Line
+	7350 5300 7350 5350
+Connection ~ 7350 5300
+Wire Wire Line
+	7350 5300 7700 5300
+Wire Wire Line
+	7700 5450 7700 5400
+Connection ~ 7700 5400
+Wire Wire Line
+	7700 5400 8050 5400
+Wire Wire Line
+	7700 5350 7700 5300
+Connection ~ 7700 5300
+Wire Wire Line
+	7700 5300 8050 5300
+Wire Wire Line
+	7700 5250 7700 5200
+Connection ~ 7700 5200
+Wire Wire Line
+	7700 5200 8050 5200
+Wire Wire Line
+	7700 5150 7700 5100
+Connection ~ 7700 5100
+Wire Wire Line
+	7700 5100 8050 5100
+Wire Wire Line
+	7700 4850 7700 4800
+Connection ~ 7700 4800
+Wire Wire Line
+	7700 4800 8050 4800
+Wire Wire Line
+	7350 4700 8800 4700
+Wire Wire Line
+	7700 4650 7700 4600
+Connection ~ 7700 4600
+Wire Wire Line
+	7700 4600 8050 4600
+Wire Wire Line
+	7700 4550 7700 4500
+Connection ~ 7700 4500
+Wire Wire Line
+	7700 4500 8400 4500
+Wire Wire Line
+	7700 4350 7700 4300
+Connection ~ 7700 4300
+Wire Wire Line
+	7700 4300 8750 4300
+Wire Wire Line
+	7700 4250 7700 4200
+Connection ~ 7700 4200
+Wire Wire Line
+	7700 4200 8050 4200
+Wire Wire Line
+	7700 4050 7700 4000
+Connection ~ 7700 4000
+Wire Wire Line
+	7700 4000 8050 4000
+Wire Wire Line
+	8050 4050 8050 4000
+Connection ~ 8050 4000
+Wire Wire Line
+	8050 4000 8400 4000
+Wire Wire Line
+	8050 4250 8050 4200
+Connection ~ 8050 4200
+Wire Wire Line
+	8050 4200 8750 4200
+Wire Wire Line
+	8050 4600 8050 4650
+Connection ~ 8050 4600
+Wire Wire Line
+	8050 4600 8400 4600
+Wire Wire Line
+	8050 4800 8050 4850
+Connection ~ 8050 4800
+Wire Wire Line
+	8050 4800 8400 4800
+Wire Wire Line
+	8050 5000 8050 5050
+Connection ~ 8050 5000
+Wire Wire Line
+	8050 5000 8400 5000
+Wire Wire Line
+	8050 5100 8050 5150
+Connection ~ 8050 5100
+Wire Wire Line
+	8050 5100 8400 5100
+Wire Wire Line
+	8050 5200 8050 5250
+Connection ~ 8050 5200
+Wire Wire Line
+	8050 5200 8400 5200
+Wire Wire Line
+	8050 5350 8050 5300
+Connection ~ 8050 5300
+Wire Wire Line
+	8050 5300 8750 5300
+Wire Wire Line
+	8050 5400 8050 5450
+Connection ~ 8050 5400
+Wire Wire Line
+	8050 5400 8400 5400
+Wire Wire Line
+	8050 5500 8050 5550
+Connection ~ 8050 5500
+Wire Wire Line
+	8050 5500 8400 5500
+Wire Wire Line
+	8400 5550 8400 5500
+Connection ~ 8400 5500
+Wire Wire Line
+	8400 5500 8750 5500
+Wire Wire Line
+	8400 5450 8400 5400
+Connection ~ 8400 5400
+Wire Wire Line
+	8400 5400 8750 5400
+Wire Wire Line
+	8400 5250 8400 5200
+Connection ~ 8400 5200
+Wire Wire Line
+	8400 5200 8750 5200
+Wire Wire Line
+	8400 5150 8400 5100
+Connection ~ 8400 5100
+Wire Wire Line
+	8400 5100 8750 5100
+Wire Wire Line
+	8400 5050 8400 5000
+Connection ~ 8400 5000
+Wire Wire Line
+	8400 5000 8750 5000
+Wire Wire Line
+	8400 4950 8400 4900
+Connection ~ 8400 4900
+Wire Wire Line
+	8400 4900 8750 4900
+Wire Wire Line
+	8400 4850 8400 4800
+Connection ~ 8400 4800
+Wire Wire Line
+	8400 4800 8750 4800
+Wire Wire Line
+	8400 4650 8400 4600
+Connection ~ 8400 4600
+Wire Wire Line
+	8400 4600 8750 4600
+Wire Wire Line
+	8400 4550 8400 4500
+Connection ~ 8400 4500
+Wire Wire Line
+	8400 4500 8750 4500
+Wire Wire Line
+	8400 4450 8400 4400
+Connection ~ 8400 4400
+Wire Wire Line
+	8400 4400 8750 4400
+Wire Wire Line
+	8400 4050 8400 4000
+Connection ~ 8400 4000
+Wire Wire Line
+	8400 4000 8800 4000
+Wire Wire Line
+	8750 4200 8750 4250
+Connection ~ 8750 4200
+Wire Wire Line
+	8750 4200 8800 4200
+Wire Wire Line
+	8750 4300 8750 4350
+Connection ~ 8750 4300
+Wire Wire Line
+	8750 4300 8800 4300
+Wire Wire Line
+	8750 4400 8750 4450
+Connection ~ 8750 4400
+Wire Wire Line
+	8750 4400 8800 4400
+Wire Wire Line
+	8750 4500 8750 4550
+Connection ~ 8750 4500
+Wire Wire Line
+	8750 4500 8800 4500
+Wire Wire Line
+	8750 4600 8750 4650
+Connection ~ 8750 4600
+Wire Wire Line
+	8750 4600 8800 4600
+Wire Wire Line
+	8750 4800 8750 4850
+Connection ~ 8750 4800
+Wire Wire Line
+	8750 4800 8800 4800
+Wire Wire Line
+	8750 4900 8750 4950
+Connection ~ 8750 4900
+Wire Wire Line
+	8750 4900 8800 4900
+Wire Wire Line
+	8750 5000 8750 5050
+Connection ~ 8750 5000
+Wire Wire Line
+	8750 5000 8800 5000
+Wire Wire Line
+	8750 5100 8750 5150
+Connection ~ 8750 5100
+Wire Wire Line
+	8750 5100 8800 5100
+Wire Wire Line
+	8750 5200 8750 5250
+Connection ~ 8750 5200
+Wire Wire Line
+	8750 5200 8800 5200
+Wire Wire Line
+	8750 5300 8750 5350
+Connection ~ 8750 5300
+Wire Wire Line
+	8750 5300 8800 5300
+Wire Wire Line
+	8750 5400 8750 5450
+Connection ~ 8750 5400
+Wire Wire Line
+	8750 5400 8800 5400
+Wire Wire Line
+	8750 5500 8750 5550
+Connection ~ 8750 5500
+Wire Wire Line
+	8750 5500 8800 5500
+Text HLabel 5600 4000 0    50   Input ~ 0
+A0
+Text HLabel 5600 4100 0    50   Input ~ 0
+A1
+Text HLabel 5600 4200 0    50   Input ~ 0
+A2
+Text HLabel 5600 4300 0    50   Input ~ 0
+A3
+Wire Wire Line
+	5600 4500 5600 4600
+Wire Wire Line
+	5600 5800 6100 5800
+Connection ~ 5600 4600
+Wire Wire Line
+	5600 4600 5600 5800
+$Comp
+L power:GND #PWR036
+U 1 1 5CCF10A4
+P 6100 5800
+F 0 "#PWR036" H 6100 5550 50  0001 C CNN
+F 1 "GND" H 6105 5627 50  0000 C CNN
+F 2 "" H 6100 5800 50  0001 C CNN
+F 3 "" H 6100 5800 50  0001 C CNN
+	1    6100 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 5800
+$Comp
+L power:+5V #PWR035
+U 1 1 5CCF1BAD
+P 6100 3700
+F 0 "#PWR035" H 6100 3550 50  0001 C CNN
+F 1 "+5V" H 6115 3873 50  0000 C CNN
+F 2 "" H 6100 3700 50  0001 C CNN
+F 3 "" H 6100 3700 50  0001 C CNN
+	1    6100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:HDSP-A401 U14
+U 1 1 5CA331F3
+P 10750 6450
+F 0 "U14" H 10750 7025 50  0000 C CNN
+F 1 "HDSP-A401" H 10750 7026 50  0001 C CNN
+F 2 "Display_7Segment:HDSP-A401" H 10750 5900 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-2553EN" H 9950 7450 50  0001 C CNN
+	1    10750 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 5550
+Connection ~ 8350 5550
+Connection ~ 6950 5550
+Connection ~ 7300 5350
+Connection ~ 7650 5350
+Connection ~ 8700 5550
+Connection ~ 8000 5450
+$Comp
+L 74xx:74LS04 U12
+U 1 1 5CA554D0
+P 9450 6000
+F 0 "U12" H 9400 6000 50  0000 C CNN
+F 1 "74LS04" H 9450 6226 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 6000 50  0001 C CNN
+	1    9450 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U12
+U 2 1 5CA5ABED
+P 9450 6300
+F 0 "U12" H 9400 6300 50  0000 C CNN
+F 1 "74LS04" H 9450 6526 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 6300 50  0001 C CNN
+	2    9450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U12
+U 3 1 5CA5B357
+P 9450 6600
+F 0 "U12" H 9400 6600 50  0000 C CNN
+F 1 "74LS04" H 9450 6826 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 6600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 6600 50  0001 C CNN
+	3    9450 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U12
+U 4 1 5CA5BB19
+P 9450 6900
+F 0 "U12" H 9400 6900 50  0000 C CNN
+F 1 "74LS04" H 9450 7126 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 6900 50  0001 C CNN
+	4    9450 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U12
+U 5 1 5CA5C240
+P 9450 7200
+F 0 "U12" H 9400 7200 50  0000 C CNN
+F 1 "74LS04" H 9450 7426 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 7200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 7200 50  0001 C CNN
+	5    9450 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U12
+U 6 1 5CA5C70F
+P 9450 7500
+F 0 "U12" H 9400 7500 50  0000 C CNN
+F 1 "74LS04" H 9450 7726 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 7500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 7500 50  0001 C CNN
+	6    9450 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 1 1 5CA5CDE9
+P 9450 7800
+F 0 "U13" H 9400 7800 50  0000 C CNN
+F 1 "74LS04" H 9450 8026 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 7800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 7800 50  0001 C CNN
+	1    9450 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 6000 9150 6000
+Wire Wire Line
+	6950 5550 6950 6000
+Wire Wire Line
+	7300 6300 9150 6300
+Wire Wire Line
+	7300 5350 7300 6300
+Wire Wire Line
+	7650 6600 9150 6600
+Wire Wire Line
+	7650 5350 7650 6600
+Wire Wire Line
+	8000 6900 9150 6900
+Wire Wire Line
+	8000 5450 8000 6900
+Wire Wire Line
+	9150 7200 8350 7200
+Wire Wire Line
+	8350 5550 8350 7200
+Wire Wire Line
+	8700 7500 9150 7500
+Wire Wire Line
+	8700 5550 8700 7500
+Wire Wire Line
+	9050 7800 9150 7800
+Wire Wire Line
+	9050 5550 9050 7800
+Wire Wire Line
+	10350 7800 10350 6750
+Wire Wire Line
+	10350 6750 10450 6750
+Wire Wire Line
+	10450 6650 10300 6650
+Wire Wire Line
+	10300 6650 10300 7500
+Wire Wire Line
+	10250 7200 10250 6550
+Wire Wire Line
+	10250 6550 10450 6550
+Wire Wire Line
+	10450 6450 10200 6450
+Wire Wire Line
+	10200 6450 10200 6900
+Wire Wire Line
+	10150 6600 10150 6350
+Wire Wire Line
+	10150 6350 10450 6350
+Wire Wire Line
+	10450 6250 10100 6250
+Wire Wire Line
+	10100 6250 10100 6300
+Wire Wire Line
+	10100 6000 10100 6150
+Wire Wire Line
+	10100 6150 10450 6150
+$Comp
+L Device:R R39
+U 1 1 5CB6D7E7
+P 9900 6000
+F 0 "R39" V 9693 6000 50  0000 C CNN
+F 1 "330" V 9784 6000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 6000 50  0001 C CNN
+F 3 "~" H 9900 6000 50  0001 C CNN
+	1    9900 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 7800 10350 7800
+Wire Wire Line
+	10300 7500 10050 7500
+Wire Wire Line
+	10050 7200 10250 7200
+Wire Wire Line
+	10200 6900 10050 6900
+Wire Wire Line
+	10050 6600 10150 6600
+Wire Wire Line
+	10100 6300 10050 6300
+Wire Wire Line
+	10050 6000 10100 6000
+$Comp
+L Device:R R40
+U 1 1 5CC09BA2
+P 9900 6300
+F 0 "R40" V 9693 6300 50  0000 C CNN
+F 1 "330" V 9784 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 6300 50  0001 C CNN
+F 3 "~" H 9900 6300 50  0001 C CNN
+	1    9900 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5CC09F8B
+P 9900 6600
+F 0 "R41" V 9693 6600 50  0000 C CNN
+F 1 "330" V 9784 6600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 6600 50  0001 C CNN
+F 3 "~" H 9900 6600 50  0001 C CNN
+	1    9900 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5CC0A2F8
+P 9900 6900
+F 0 "R42" V 9693 6900 50  0000 C CNN
+F 1 "330" V 9784 6900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 6900 50  0001 C CNN
+F 3 "~" H 9900 6900 50  0001 C CNN
+	1    9900 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5CC0A5D0
+P 9900 7200
+F 0 "R43" V 9693 7200 50  0000 C CNN
+F 1 "330" V 9784 7200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 7200 50  0001 C CNN
+F 3 "~" H 9900 7200 50  0001 C CNN
+	1    9900 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R44
+U 1 1 5CC0A809
+P 9900 7500
+F 0 "R44" V 9693 7500 50  0000 C CNN
+F 1 "330" V 9784 7500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 7500 50  0001 C CNN
+F 3 "~" H 9900 7500 50  0001 C CNN
+	1    9900 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R45
+U 1 1 5CC0AA82
+P 9900 7800
+F 0 "R45" V 9693 7800 50  0000 C CNN
+F 1 "330" V 9784 7800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 7800 50  0001 C CNN
+F 3 "~" H 9900 7800 50  0001 C CNN
+	1    9900 7800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR037
+U 1 1 5CC0AD22
+P 11250 6750
+F 0 "#PWR037" H 11250 6600 50  0001 C CNN
+F 1 "+5V" H 11265 6923 50  0000 C CNN
+F 2 "" H 11250 6750 50  0001 C CNN
+F 3 "" H 11250 6750 50  0001 C CNN
+	1    11250 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 6850 11050 6750
+Wire Wire Line
+	11050 6750 11250 6750
+Connection ~ 11050 6750
+$EndSCHEMATC

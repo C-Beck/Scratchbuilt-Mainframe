@@ -2287,7 +2287,7 @@ $Sheet
 S 6750 4850 550  500 
 U 5C99B4A2
 F0 "Hex to 7-Segment Decoder" 50
-F1 "Hex to 7-Segment Decoder.sch" 50
+F1 "Hex_to_7-Segment_Decoder.sch" 50
 F2 "A0" I L 6750 4950 50 
 F3 "A1" I L 6750 5050 50 
 F4 "A2" I L 6750 5150 50 
