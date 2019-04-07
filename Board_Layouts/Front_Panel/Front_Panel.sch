@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Front Panel-cache
+LIBS:Front_Panel-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 2
+Sheet 1 7
 Title "Front Panel"
 Date "2019-03-23"
 Rev "A"
@@ -2284,13 +2284,159 @@ F 3 "" H 11500 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 6750 4850 550  500 
+S 6750 5600 550  500 
 U 5C99B4A2
-F0 "Hex to 7-Segment Decoder" 50
+F0 "Data_2" 50
 F1 "Hex_to_7-Segment_Decoder.sch" 50
-F2 "A0" I L 6750 4950 50 
-F3 "A1" I L 6750 5050 50 
-F4 "A2" I L 6750 5150 50 
-F5 "A3" I L 6750 5250 50 
+F2 "A0" I L 6750 5700 50 
+F3 "A1" I L 6750 5800 50 
+F4 "A2" I L 6750 5900 50 
+F5 "A3" I L 6750 6000 50 
 $EndSheet
+$Sheet
+S 6750 4900 550  500 
+U 5CAB8BF2
+F0 "Data_1" 50
+F1 "Hex_to_7-Segment_Decoder.sch" 50
+F2 "A0" I L 6750 5000 50 
+F3 "A1" I L 6750 5100 50 
+F4 "A2" I L 6750 5200 50 
+F5 "A3" I L 6750 5300 50 
+$EndSheet
+$Sheet
+S 6750 8400 550  500 
+U 5CABA873
+F0 "Addr_4" 50
+F1 "Hex_to_7-Segment_Decoder.sch" 50
+F2 "A0" I L 6750 8500 50 
+F3 "A1" I L 6750 8600 50 
+F4 "A2" I L 6750 8700 50 
+F5 "A3" I L 6750 8800 50 
+$EndSheet
+$Sheet
+S 6750 7700 550  500 
+U 5CABC1E4
+F0 "Addr_3" 50
+F1 "Hex_to_7-Segment_Decoder.sch" 50
+F2 "A0" I L 6750 7800 50 
+F3 "A1" I L 6750 7900 50 
+F4 "A2" I L 6750 8000 50 
+F5 "A3" I L 6750 8100 50 
+$EndSheet
+$Sheet
+S 6750 7000 550  500 
+U 5CABDB41
+F0 "Addr_2" 50
+F1 "Hex_to_7-Segment_Decoder.sch" 50
+F2 "A0" I L 6750 7100 50 
+F3 "A1" I L 6750 7200 50 
+F4 "A2" I L 6750 7300 50 
+F5 "A3" I L 6750 7400 50 
+$EndSheet
+$Sheet
+S 6750 6300 550  500 
+U 5CABF552
+F0 "Addr_1" 50
+F1 "Hex_to_7-Segment_Decoder.sch" 50
+F2 "A0" I L 6750 6400 50 
+F3 "A1" I L 6750 6500 50 
+F4 "A2" I L 6750 6600 50 
+F5 "A3" I L 6750 6700 50 
+$EndSheet
+Text Label 6600 5000 2    50   ~ 0
+Data_0
+Text Label 6600 5100 2    50   ~ 0
+Data_1
+Text Label 6600 5200 2    50   ~ 0
+Data_2
+Text Label 6600 5300 2    50   ~ 0
+Data_3
+Text Label 6600 5700 2    50   ~ 0
+Data_4
+Text Label 6600 5800 2    50   ~ 0
+Data_5
+Text Label 6600 5900 2    50   ~ 0
+Data_6
+Text Label 6600 6000 2    50   ~ 0
+Data_7
+Wire Wire Line
+	6750 5000 6600 5000
+Wire Wire Line
+	6750 5100 6600 5100
+Wire Wire Line
+	6750 5200 6600 5200
+Wire Wire Line
+	6750 5300 6600 5300
+Wire Wire Line
+	6750 5700 6600 5700
+Wire Wire Line
+	6750 5800 6600 5800
+Wire Wire Line
+	6750 5900 6600 5900
+Wire Wire Line
+	6750 6000 6600 6000
+Wire Wire Line
+	6750 6400 6600 6400
+Wire Wire Line
+	6750 6500 6600 6500
+Wire Wire Line
+	6750 6600 6600 6600
+Wire Wire Line
+	6750 6700 6600 6700
+Wire Wire Line
+	6750 7100 6600 7100
+Wire Wire Line
+	6750 7200 6600 7200
+Wire Wire Line
+	6750 7300 6600 7300
+Wire Wire Line
+	6750 7400 6600 7400
+Wire Wire Line
+	6750 7800 6600 7800
+Wire Wire Line
+	6750 7900 6600 7900
+Wire Wire Line
+	6750 8000 6600 8000
+Wire Wire Line
+	6750 8100 6600 8100
+Wire Wire Line
+	6750 8500 6600 8500
+Wire Wire Line
+	6750 8600 6600 8600
+Wire Wire Line
+	6750 8700 6600 8700
+Wire Wire Line
+	6750 8800 6600 8800
+Text Label 6600 6500 2    50   ~ 0
+Addr_1
+Text Label 6600 6600 2    50   ~ 0
+Addr_2
+Text Label 6600 6700 2    50   ~ 0
+Addr_3
+Text Label 6600 7100 2    50   ~ 0
+Addr_4
+Text Label 6600 7200 2    50   ~ 0
+Addr_5
+Text Label 6600 7300 2    50   ~ 0
+Addr_6
+Text Label 6600 7400 2    50   ~ 0
+Addr_7
+Text Label 6600 7800 2    50   ~ 0
+Addr_8
+Text Label 6600 7900 2    50   ~ 0
+Addr_9
+Text Label 6600 8000 2    50   ~ 0
+Addr_10
+Text Label 6600 8100 2    50   ~ 0
+Addr_11
+Text Label 6600 8500 2    50   ~ 0
+Addr_12
+Text Label 6600 8600 2    50   ~ 0
+Addr_13
+Text Label 6600 8700 2    50   ~ 0
+Addr_14
+Text Label 6600 8800 2    50   ~ 0
+Addr_15
+Text Label 6600 6400 2    50   ~ 0
+Addr_0
 $EndSCHEMATC
