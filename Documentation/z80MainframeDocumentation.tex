@@ -48,14 +48,23 @@ Dedicated to caffeine for giving me the energy to write this and sleep deprivati
 \mainmatter
 \chapter{Main Board}
 \section{Power Supply}
-The system is designed to use one higher wattage power supply to provide the low voltage for the peripherals and main board. For the system as shown here, the supply should be rated at least seven amperes at five volts and fifteen amperes at twelve volts for a combined two hundred fifteen watts of total power. If additional peripherals are expected to be added, then the power supply should be of a higher wattage so that the whole system can be powered from a unified supply to avoid the risk of ground loops that could induce excessive noise.
+The system is designed to use one power supply to provide the low voltage for the peripherals and main board. For the system as shown here, the supply 
+should be rated at least seven amperes at five volts and fifteen amperes at twelve volts for a combined two hundred fifteen watts of total power. If 
+additional peripherals are expected to be added, then the power supply should be of a higher wattage so that the whole system can be powered from a 
+unified supply to avoid the risk of ground loops that could induce excessive noise.
 
 \section{Physical Connections}
 \subsection{Power}
-For the rear panel power connections, any connectors may be used as long as they have sufficient current capacity for the load expected. For my design, I elected to use 3-pin XLR connectors as listed in Appendix B.7. If XLR connectors are used for power, they should be marked as such to avoid any accidental damage.
+For the rear panel power connections, any connectors may be used as long as they have sufficient current capacity for the load expected. For my design, I 
+elected to use 3-pin XLR connectors as listed in Appendix B.7. If XLR connectors are used for power, they should be marked as such to avoid any 
+accidental damage. The system is designed such that the power is daisy-chained from one preipheral to the next. This does mean that the total power 
+draw needs to be taken into consideration when selecting a conector type to use.
 
 \subsection{Data}
-For the data connections, it is recommended to use 8p8c modular connectors along with cat 5 cable to match the impedance for the differential connection. If a different cable is used, the termination resistors on the peripherals need to be changed to be of a suitable value to prevent ringing.
+For the data connections, it is recommended to use 8p8c modular connectors along with cat 5 cable to match the impedance for the differential 
+connection. If a different cable is used, the termination resistors on the peripherals need to be changed to be of a suitable value to prevent ringing. The 
+system is designed such that the data is daisy-chained from one preipheral to the next. This has the advantage that termination resistors only need to be 
+used on the first and last device in the chain as specified on pg. 12 of the datasheet\cite{nxp:pca9615}.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \begin{center}
@@ -80,24 +89,35 @@ Pin Number & Function & Wire Color\\
 \caption{Interface Pin Functions\label{tab:intpin}}
 \end{table}
 \section{Interface}
-The inter-peripheral communication is done via differental I$^2$C running at 400kbit/s. This link is designed to be wired as illustrated in figure \ref{fig:eia568} and in table \ref{tab:intpin}. Using a parallel connection would allow for a higher throughput and would simplify some of the design however this comes at a higher cost due to the connectors and cabling. A circuit, shown in figure \ref{fig:intdecode}, is used to identify when a peripheral is being addressed and trigers a wait for the z80 and notifies a PIC that there is data ready to transmit. This portion of the circuit is designed to be modular since one copy is needed for each peripheral that is to be addressed. 
+The inter-peripheral communication is done via differental I$^2$C running at 400kbit/s. This link is designed to be wired as illustrated in figure 
+\ref{fig:eia568} and in table \ref{tab:intpin}. Using a parallel connection would allow for a higher throughput and would simplify some of the design 
+however this comes at a higher cost due to the connectors and cabling. A circuit, shown in figure \ref{fig:intdecode}, is used to identify when a peripheral 
+is being addressed and triggers a wait for the z80 and notifies a PIC that there is data ready to transmit. This portion of the circuit is designed to be 
+modular since one copy is needed for each peripheral that is to be addressed and is to be expandable through stackable modules, shown in figure \ref{fig:decpcb}.
 
-The z80 mainframe was designed to be modular and expandable. It accomplishes this by having a simple interface that brings out the lines from the main bus necessary for IO control and direct memory access. The system is limited to 232 connected peripherals because of the limitations of the z80's IO addressing technique. The z80 only uses the lower 8 bits of the address bus for IO addressing while the contents of the accumulator are placed on the upper 8 bits in the case of  the IN A,(n) instruction\cite[p.~295]{zlg:z80}
+The z80 mainframe was designed to be modular and expandable. It accomplishes this by having a simple interface that either gets data from memory using direct memory access(DMA) or writes data using DMA. The system is limited to 128 connected peripherals because of the limitation of I$^2$C's 7-bit addresses.
 
-The peripherals  are designed to look for a specific address after which the device pulls the BUSREQ line low and reads from 0x0800 to 0x084F or writes to 0x850 to 0x089F. The peripherals listed here are designed to be configurable as to what address they respond to and the OS is configurable for where it is trying to address these devices at. Both are configured in hardware rather than in software to simplify configuration so the OS can determine settings without the ROM needing to be modified to be installation dependent.
+The interface PIC(U?? in appendix C.3)  is designed to look for specific addresses after which the it pulls the BUSREQ line low and reads from 0x0800 to 0x084F or writes to 0x850 to 0x089F. The peripherals listed here are designed to be configurable as to what address they respond to and the OS is configurable for where it is trying to address these devices at. Both are configured in hardware rather than in software to simplify configuration so the OS can determine settings without the ROM needing to be modified to be installation dependent.
 
 \section{Configuration}
 The system is configured through DIP switches for the addresses that the peripherals described here are located at.
 
+\section{ROM}
+The ROM, listed in appendix A.1, is intended to funtion as a bootstrap script to prepare the system to load a program from another medium. It also serves to provide callable funtions for the default peripherals to ease implimentation.
+
 \chapter{Front Panel}
-The front panel connects directly to the main board through a 36 pin header that caries the 16-bit address bus, the 8-bit data bus, power, and the 10 control lines; BUSREQ, BUSACK, WAIT, MREQ, IORQ, RD, WR, M1, HALT, and RESET. It is designed with status LEDs for the control lines and buses as well as hexadecimal readouts for the buses. The front panel also includes the circuitry for an instruction single stepping circuit along with halt and reset controls. There also are four 8-bit inputs and four 8-bit outputs.
+The front panel connects directly to the main board through a 36 pin header that caries the 16-bit address bus, the 8-bit data bus, power, and the 10 
+control lines; BUSREQ, BUSACK, WAIT, MREQ, IORQ, RD, WR, M1, HALT, and RESET. It is designed with status LEDs for the control lines and buses as well 
+as hexadecimal readouts for the buses. The front panel also includes the circuitry for an instruction single stepping circuit along with halt and reset 
+controls. There also are four 8-bit inputs and four 8-bit outputs.
 \section{Outputs}
 \section{Inputs}
 
 \chapter{VGA Terminal}
 
 \chapter{Dot Matrix Printer}
-The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as shown in figure~(null pointer).
+The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as 
+shown in figure~(null pointer).
 \begin{figure}[h]
 \centering
 \begin{tikztimingtable}
