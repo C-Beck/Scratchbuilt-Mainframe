@@ -49,22 +49,22 @@ Dedicated to caffeine for giving me the energy to write this and sleep deprivati
 \chapter{Main Board}
 \section{Power Supply}
 The system is designed to use one power supply to provide the low voltage for the peripherals and main board. For the system as shown here, the supply 
-should be rated at least seven amperes at five volts and fifteen amperes at twelve volts for a combined two hundred fifteen watts of total power. If 
-additional peripherals are expected to be added, then the power supply should be of a higher wattage so that the whole system can be powered from a 
-unified supply to avoid the risk of ground loops that could induce excessive noise.
+should be rated at least 7 amperes at 5 volts and 15 amperes at 12 volts for a combined 215 watts of total power. If additional peripherals are expected to 
+be added, then the power supply should be of a higher wattage so that the whole system can be powered from a unified supply to avoid the risk of ground 
+loops that could induce excessive noise.
 
 \section{Physical Connections}
 \subsection{Power}
 For the rear panel power connections, any connectors may be used as long as they have sufficient current capacity for the load expected. For my design, I 
 elected to use 3-pin XLR connectors as listed in Appendix B.7. If XLR connectors are used for power, they should be marked as such to avoid any 
 accidental damage. The system is designed such that the power is daisy-chained from one preipheral to the next. This does mean that the total power 
-draw needs to be taken into consideration when selecting a conector type to use.
+draw for the whole system needs to be taken into consideration when selecting a connector type to use.
 
 \subsection{Data}
-For the data connections, it is recommended to use 8p8c modular connectors along with cat 5 cable to match the impedance for the differential 
-connection. If a different cable is used, the termination resistors on the peripherals need to be changed to be of a suitable value to prevent ringing. The 
-system is designed such that the data is daisy-chained from one preipheral to the next. This has the advantage that termination resistors only need to be 
-used on the first and last device in the chain as specified on pg. 12 of the datasheet\cite{nxp:pca9615}.
+For the data connections, the sytem is designed to use 8p8c modular connectors along with cat 5 cable for the differential connection. If a different cable is 
+used, the termination resistors on the peripherals need to be changed to be of a suitable value to prevent ringing. The system is designed such that the 
+data is daisy-chained from one preipheral to the next. This has the advantage that termination resistors only need to be used on the first and last device in 
+the chain as specified on pg. 12 of the PCA9615 datasheet\cite{nxp:pca9615}.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \begin{center}
@@ -93,7 +93,7 @@ The inter-peripheral communication is done via differental I$^2$C running at 400
 \ref{fig:eia568} and in table \ref{tab:intpin}. Using a parallel connection would allow for a higher throughput and would simplify some of the design 
 however this comes at a higher cost due to the connectors and cabling. A circuit, shown in figure \ref{fig:intdecode}, is used to identify when a peripheral 
 is being addressed and triggers a wait for the z80 and notifies a PIC that there is data ready to transmit. This portion of the circuit is designed to be 
-modular since one copy is needed for each peripheral that is to be addressed and is to be expandable through stackable modules, shown in figure \ref{fig:decpcb}.
+modular since one copy is needed for each peripheral that is to be addressed and is expandable through stackable modules, shown in figure \ref{fig:decpcb}.
 
 The z80 mainframe was designed to be modular and expandable. It accomplishes this by having a simple interface that either gets data from memory using direct memory access(DMA) or writes data using DMA. The system is limited to 128 connected peripherals because of the limitation of I$^2$C's 7-bit addresses.
 
@@ -103,7 +103,7 @@ The interface PIC(U?? in appendix C.3)  is designed to look for specific address
 The system is configured through DIP switches for the addresses that the peripherals described here are located at.
 
 \section{ROM}
-The ROM, listed in appendix A.1, is intended to funtion as a bootstrap script to prepare the system to load a program from another medium. It also serves to provide callable funtions for the default peripherals to ease implimentation.
+The ROM, listed in appendix A.1, is intended to function as a bootstrap script to prepare the system to load a program from another medium. It also serves to provide callable funtions for the default peripherals to ease implimentation in programs.
 
 \chapter{Front Panel}
 The front panel connects directly to the main board through a 36 pin header that caries the 16-bit address bus, the 8-bit data bus, power, and the 10 
@@ -117,7 +117,7 @@ controls. There also are four 8-bit inputs and four 8-bit outputs.
 
 \chapter{Dot Matrix Printer}
 The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as 
-shown in figure~(null pointer).
+shown in figure~\ref{fig:printer}.
 \begin{figure}[h]
 \centering
 \begin{tikztimingtable}
@@ -211,32 +211,32 @@ after row=\hline}]{misc_bom.csv}
 
 \chapter{Circuit Diagrams}
 \section{Main Board}
-\cleardoublepage
+\clearpage
 \section{Front Panel}
-\cleardoublepage
+\clearpage
 \section{VGA Terminal}
-\cleardoublepage
+\clearpage
 \section{Line Printer Driver Board}
 \begin{sideways}
 \centering
 \includegraphics[height=1.1\textwidth]{../Board_Layouts/Printer_Driver/Printer_Driver.pdf}
 \end{sideways}
-\cleardoublepage
+\clearpage
 \section{Card Punch \& Reader Driver Board}
-\cleardoublepage
+\clearpage
 \section{Paper Tape Punch \& Reader Driver Board}
 
 \chapter{PCB Masks}
 \section{Main Board}
-\cleardoublepage
+\clearpage
 \section{Front Panel}
-\cleardoublepage
+\clearpage
 \section{VGA Terminal}
-\cleardoublepage
+\clearpage
 \section{Line Printer Driver Board}
-\cleardoublepage
+\clearpage
 \section{Card Punch \& Reader Driver Board}
-\cleardoublepage
+\clearpage
 \section{Paper Tape Punch \& Reader Driver Board}
 \chapter{Part Drawings}
 \backmatter

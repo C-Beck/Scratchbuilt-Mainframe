@@ -1,0 +1,38 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "CGA Terminal"
+Date "2019-07-20"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB9_Female_MountingHoles J?
+U 1 1 5D34D18F
+P 14850 5800
+F 0 "J?" H 15030 5756 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 15030 5711 50  0001 L CNN
+F 2 "" H 14850 5800 50  0001 C CNN
+F 3 " ~" H 14850 5800 50  0001 C CNN
+	1    14850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Parallax:P8X32A-D40 U?
+U 1 1 5D34E5F1
+P 11650 6700
+F 0 "U?" H 11650 7981 50  0000 C CNN
+F 1 "P8X32A-D40" H 11650 7890 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 11650 7900 50  0001 C CNN
+F 3 "https://www.parallax.com/sites/default/files/downloads/P8X32A-Propeller-Datasheet-v1.4.0_0.pdf" H 11650 6700 50  0001 C CNN
+	1    11650 6700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
