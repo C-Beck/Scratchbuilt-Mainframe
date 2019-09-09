@@ -56,7 +56,7 @@ Dedicated to caffeine for giving me the energy to write this and sleep deprivati
 \listoffigures
 \listoftables
 \mainmatter
-\chapter{Main Board}
+\chapter{General Construction}
 \section{Power Supply}
 The system is designed to use one power supply to provide the low voltage for the peripherals and main board. For the system as shown here, the supply 
 should be rated at least 7 amperes at 5 volts and 15 amperes at 12 volts for a combined 215 watts of total power. If additional peripherals are expected to 
@@ -105,13 +105,14 @@ however this comes at a higher cost due to the connectors and cabling. A circuit
 is being addressed and triggers a wait for the z80 and notifies a PIC that there is data ready to transmit. This portion of the circuit is designed to be 
 modular since one copy is needed for each peripheral that is to be addressed and is expandable through stackable modules, shown in figure \ref{fig:decpcb}.
 
-The z80 mainframe was designed to be modular and expandable. It accomplishes this by having a simple interface that either gets data from memory using direct memory access(DMA) or writes data using DMA. The system is limited to 128 connected peripherals because of the limitation of I$^2$C's 7-bit addresses.
+The z80 mainframe was designed to be modular and expandable. It accomplishes this by having a simple interface that either reads  or writes data using DMA. The system is limited to 128 connected peripherals because of the limitation of I$^2$C's 7-bit addresses.
 
-The interface PIC(U?? in appendix C.3)  is designed to look for specific addresses after which the it pulls the BUSREQ line low and reads from 0x0800 to 0x084F or writes to 0x850 to 0x089F. The peripherals listed here are designed to be configurable as to what address they respond to and the OS is configurable for where it is trying to address these devices at. Both are configured in hardware rather than in software to simplify configuration so the OS can determine settings without the ROM needing to be modified to be installation dependent.
+The interface PIC(U?? in appendix C.3) is designed to look for specific addresses after which the it pulls the BUSREQ line low and reads from 0x0800 to 0x084F or writes to 0x850 to 0x089F. The peripherals listed here are designed to be configurable as to what address they respond to and the OS is configurable for where it is trying to address these devices at. Both are configured in hardware rather than in software to simplify configuration so the OS can determine settings without the ROM needing to be modified to be installation dependent.
 
 \section{Configuration}
 The system is configured through DIP switches for the addresses that the peripherals described here are located at.
 
+\chapter{Main Board}
 \section{ROM}
 The ROM, listed in appendix A.1, is intended to function as a bootstrap script to prepare the system to load a program from another medium. It also serves to provide callable funtions for the default peripherals to ease implimentation in programs.
 
@@ -123,7 +124,7 @@ controls. There also are four 8-bit inputs and four 8-bit outputs.
 \section{Outputs}
 \section{Inputs}
 
-\chapter{VGA Terminal}
+\chapter{CGA Terminal}
 
 \chapter{Dot Matrix Printer}
 The main output for the z80 mainframe is the printer. This particular setup is designed to use an Epson LX-810 printer interfacing over a parallel port as 
