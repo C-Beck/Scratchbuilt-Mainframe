@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Printer Driver-cache
+LIBS:Printer_Driver-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
@@ -858,13 +858,13 @@ $EndComp
 Wire Wire Line
 	13600 2000 13700 2000
 Wire Wire Line
-	13700 2400 14450 2400
+	13700 2400 14200 2400
 Wire Wire Line
 	13700 2300 13700 2400
 Wire Wire Line
 	13600 2300 13700 2300
 Wire Wire Line
-	14050 2300 14450 2300
+	14050 2300 14150 2300
 Wire Wire Line
 	14050 2600 14050 2300
 Wire Wire Line
@@ -874,7 +874,7 @@ Wire Wire Line
 Wire Wire Line
 	14150 2900 14150 3000
 Wire Wire Line
-	14450 2900 14150 2900
+	14450 2900 14350 2900
 Wire Wire Line
 	14300 3000 14450 3000
 Wire Wire Line
@@ -1083,4 +1083,45 @@ Wire Wire Line
 	11750 2700 11750 4500
 Wire Wire Line
 	11800 2500 11800 4600
+$Comp
+L Connector:8P8C J6
+U 1 1 5D901381
+P 14850 1450
+F 0 "J6" V 14861 1980 50  0000 L CNN
+F 1 "8P8C" V 14952 1980 50  0000 L CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 14850 1475 50  0001 C CNN
+F 3 "~" V 14850 1475 50  0001 C CNN
+	1    14850 1450
+	-1   0    0    1   
+$EndComp
+NoConn ~ 14450 1350
+NoConn ~ 14450 1450
+NoConn ~ 14450 1550
+NoConn ~ 14450 1650
+Wire Wire Line
+	14450 1150 14150 1150
+Wire Wire Line
+	14150 1150 14150 2300
+Connection ~ 14150 2300
+Wire Wire Line
+	14150 2300 14450 2300
+Wire Wire Line
+	14300 2700 14300 1850
+Wire Wire Line
+	14300 1850 14450 1850
+Connection ~ 14300 2700
+Wire Wire Line
+	14350 2900 14350 1750
+Wire Wire Line
+	14350 1750 14450 1750
+Connection ~ 14350 2900
+Wire Wire Line
+	14350 2900 14150 2900
+Wire Wire Line
+	14200 2400 14200 1250
+Wire Wire Line
+	14200 1250 14450 1250
+Connection ~ 14200 2400
+Wire Wire Line
+	14200 2400 14450 2400
 $EndSCHEMATC

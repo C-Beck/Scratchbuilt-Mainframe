@@ -1,0 +1,37 @@
+difference(){
+    cube([44.45,101.6,25.4]);
+    union(){
+        translate([9.52+3.18/2,25.4-(14.29-3.18)/2,11.11]){
+            minkowski(){
+                cylinder(r=3.18,h=14.29);
+                cube([25.4-3.18,14.29-3.18,14.29]);
+            }
+        }
+        union(){
+            translate([-.25,25.4,25.4-14.25/2])
+            rotate([0,90,0])
+            cylinder(r=6.35/2,h=45);
+            translate([-.25,25.4-6.35/2,25.4-14.29/2])
+            cube([45,6.35,14.29]);
+        }
+        translate([-.25,25.4-25.4/2,25.4-5.68])
+        cube([45,25.4,14.29]);
+    }
+    translate([11.43,73.02,-1]){
+        union(){
+            minkowski(){
+                    cylinder(r=3.18,h=11.3);
+                    cube([27.94-6.35,12.7-3.18,11.3]);
+            }
+            translate([-0.64,4.76,0])cylinder(r=.8,h=27);
+            translate([1.26,4.76,0])cylinder(r=.8,h=27);
+            translate([3.8,4.76,0])cylinder(r=.8,h=27);
+            translate([6.34,4.76,0])cylinder(r=.8,h=27);
+            translate([8.88,4.76,0])cylinder(r=.8,h=27);
+            translate([11.42,4.76,0])cylinder(r=.8,h=27);
+            translate([13.96,4.76,0])cylinder(r=.8,h=27);
+            translate([16.5,4.76,0])cylinder(r=.8,h=27);
+            translate([19.04,4.76,0])cylinder(r=.8,h=27);
+        }
+    }
+}
